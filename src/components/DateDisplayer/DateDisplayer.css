@@ -1,0 +1,44 @@
+.dateContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateVer {
+    height: 5rem;
+    width: 5rem;
+    padding: .5rem;
+}
+
+.clockVer {
+    height: 9rem;
+    width: 9rem;
+    padding: .75rem;
+}
+
+
+.date__month {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.date__year {
+    font-size: 1rem;
+}
+
+.date__day {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.time-clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}

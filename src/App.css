@@ -1,0 +1,39 @@
+.container {
+  margin-inline: auto;
+  max-width: 1440px;
+}
+
+.app {
+  position: relative;
+}
+
+.header-clock {
+  position: absolute;
+  margin-right: .5rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 915px) {
+  .header-clock {
+    display: none !important;
+  }
+}
+
+
+Body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../public/expenseAppBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  user-select: none;
+}
+
+
+

@@ -1,0 +1,102 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    gap: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.new-expense__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    flex: 1;
+}
+
+.new-expense__control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 220px;
+}
+
+.new-expense__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.new-expense__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.new-expense__control input:focus {
+    border-color: #40005d;
+    box-shadow: 0 0 8px rgba(64, 0, 93, 0.2);
+}
+
+
+.new-expense__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+}
+
+@media (max-width: 450px) {
+    .new-expense__actions, .new-expense__actions button  {
+        width: 100%;
+    }
+}
+
+.new-expense__actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #4caf50;
+    background-color: #4caf50;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    margin-top: -.5rem;
+}
+
+.new-expense__actions button:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.errorMessage {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-25%);
+    color: red;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: white;
+    padding: .1rem .3rem;
+    border-radius: .5rem;
+}
+

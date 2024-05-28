@@ -1,0 +1,133 @@
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    margin-inline: 1rem;
+}
+
+.expense-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.expense-item__additionals {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.expense-item__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    gap: 0.5rem;
+    flex: 1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.expense-item__description h2 {
+    margin: 0;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.expense-item__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 12px;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.expense-item__price:hover {
+    background-color: #45a049;
+}
+
+.expense-item__remove {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e53935;
+    border: none;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    margin-inline: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.expense-item__remove:hover {
+    background-color: #d32f2f;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 580px) {
+    .expense-item__description {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .expense-item__description h2 {
+        font-size: 1.75rem;
+    }
+
+    .expense-item__price {
+        font-size: 1.5rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .expense-item {
+        position: relative;
+    }
+
+    .expense-item__additionals {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .expense-item {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .expense-item__additionals {
+        margin-top: 1.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

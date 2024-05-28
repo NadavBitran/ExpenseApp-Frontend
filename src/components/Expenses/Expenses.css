@@ -1,0 +1,26 @@
+.expenses-list {
+    max-height: 60vh;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    scrollbar-width: thin; 
+    scrollbar-color: #f9f9f9 #4b4b4b; 
+}
+
+.no-expenses-error {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+.expenses-list::-webkit-scrollbar {
+    width: .5rem; 
+}
