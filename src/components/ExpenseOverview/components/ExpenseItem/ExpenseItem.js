@@ -1,8 +1,8 @@
 import { memo } from "react";
 import "./ExpenseItem.css";
-import DateDisplayer from "../DateDisplayer/DateDisplayer";
-import Card from "../Card/Card";
-import { capitalizeFirstLetter } from "../../utils/StringUtils";
+import DateDisplayer from "../../../DateDisplayer/DateDisplayer";
+import Card from "../../../Card/Card";
+import { capitalizeFirstLetter } from "../../../../utils/StringUtils";
 
 const ExpenseItem = memo(({ id, title, amount, date, removeExpenseItem }) => {
 

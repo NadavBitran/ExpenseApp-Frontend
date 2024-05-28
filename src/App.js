@@ -1,10 +1,9 @@
 import './App.css';
-import AddExpenseForm from './components/AddExpenseForm/AddExpenseForm';
 import DateDisplayer from './components/DateDisplayer/DateDisplayer';
-import Expenses from './components/Expenses/Expenses';
+import ExpenseOverview from './components/ExpenseOverview/ExpenseOverview';
 import Header from './components/Header/Header';
 
-import { ExpenseProvider } from './components/Expenses/context/useExpenseContext';
+
 
 function App() 
 {
@@ -14,10 +13,10 @@ function App()
       <Header>
         <DateDisplayer className='header-clock' isClock={true}/>
       </Header>
-      <ExpenseProvider>
-        <AddExpenseForm />
-        <Expenses />
-      </ExpenseProvider>
+      <ExpenseOverview>
+        <ExpenseOverview.AddExpenseForm />
+        <ExpenseOverview.ExpensesSearch />
+      </ExpenseOverview>
     </div>
   );
 }

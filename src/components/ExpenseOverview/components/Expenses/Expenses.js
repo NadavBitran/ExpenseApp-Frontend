@@ -1,12 +1,13 @@
 import ExpenseItem from '../ExpenseItem/ExpenseItem';
-import { useExpenseContext } from './context/useExpenseContext';
+import { useMemo } from 'react';
+import { useExpenseContext } from '../../contexts/useExpenseContext';
 import './Expenses.css';
 
 export default function Expenses() 
 {
     const { expenses, removeExpenseItem } = useExpenseContext();
 
-    const expensesKeysArray = Object.keys(expenses).reverse();
+    const expensesKeysArray = useMemo(() => Object.keys(expenses).reverse(), [expenses]);
     const hasExpenses = expensesKeysArray.length > 0;
     
     return (

@@ -1,0 +1,73 @@
+.searchBar {
+    margin-block: 1rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin-inline: 1rem;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.searchBar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 400px) {
+    .searchBar {
+        margin-top: 2rem;
+    }
+}
+
+
+.searchBar input {
+    border: none;
+    outline: none;
+    font-size: 1rem; 
+    line-height: 1.5; 
+    width: 80%;
+    font-weight: bold;
+    margin-inline: 1rem;
+    margin-right: -2rem;
+}
+
+.searchBar input::placeholder {
+    color: #333;
+}
+
+.searchBar--itemsFound {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    font-weight: bold;
+    color: #333;
+}
+
+.searchBar--clearBtn {
+    background-color: #e53935;
+    font-weight: bold;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.searchBar__options {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .searchBar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .searchBar__options {
+        align-self: flex-end;
+    }
+}

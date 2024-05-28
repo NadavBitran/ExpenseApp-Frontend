@@ -1,8 +1,8 @@
 import './AddExpenseForm.css';
 import { v4 as uuidv4 } from 'uuid';
 import useAddExpenseFormValidation from './hooks/useAddExpenseFormValidation';
-import { useExpenseContext } from '../Expenses/context/useExpenseContext';
-import { addCommasToNumber, removeCommasFromNumber } from '../../utils/StringUtils';
+import { useExpenseContext } from '../../contexts/useExpenseContext';
+import { addCommasToNumber, removeCommasFromNumber } from '../../../../utils/StringUtils';
 
 export default function AddExpenseForm() {
 
