@@ -29,7 +29,7 @@ const useAddExpenseFormValidation = () => {
 
         if(isNaN(amountWithoutCommas.trim()) || Number(amountWithoutCommas.trim()) < 0 || Number(amountWithoutCommas.trim() > 5000000))
         {
-            setValidationErrorMessage('Amount should a number greater between 0 and 5,000,000');
+            setValidationErrorMessage('Amount should be a number between 0 and 5,000,000');
             return false;
         }
 

@@ -21,7 +21,7 @@ const useExpenses = (initialValue) =>
     const filteredExpenses = useMemo(() => {
         if (!filteringByName) return expenses;
         return Object.keys(expenses).reduce((acc, key) => {
-            if (expenses[key].title.includes(filteringByName)) {
+            if (expenses[key].title.toLowerCase().includes(filteringByName.toLowerCase())) {
                 acc[key] = expenses[key];
             }
             return acc;

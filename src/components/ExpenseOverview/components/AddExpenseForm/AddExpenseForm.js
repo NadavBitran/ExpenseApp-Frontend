@@ -36,11 +36,11 @@ export default function AddExpenseForm() {
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label>Title</label>
-                    <input type="text" ref={formRefs.titleRef}  />
+                    <input type="text" ref={formRefs.titleRef} placeholder='Enter title...'  />
                 </div>
                 <div className="new-expense__control">
                     <label>Amount</label>
-                    <input type="text" ref={formRefs.amountRef} onChange={handleAmountChange}/>
+                    <input type="text" ref={formRefs.amountRef} onChange={handleAmountChange} placeholder='Enter amount...'/>
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>

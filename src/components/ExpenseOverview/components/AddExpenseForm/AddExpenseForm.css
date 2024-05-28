@@ -49,6 +49,10 @@ form:hover {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.new-expense__control input::placeholder {
+    color: #333;
+}
+
 .new-expense__control input:focus {
     border-color: #40005d;
     box-shadow: 0 0 8px rgba(64, 0, 93, 0.2);
