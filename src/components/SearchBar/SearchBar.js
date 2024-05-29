@@ -18,7 +18,7 @@ const SearchBar = memo(({onChange, onClear, onDebounceSearch, entitiesFound, inp
 
     useEffect(() => 
     {
-        if (onDebounceSearch && query) 
+        if (onDebounceSearch) 
         {
             const timer = setTimeout(() => {
                 onDebounceSearch(query);
