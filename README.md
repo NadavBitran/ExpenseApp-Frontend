@@ -2,6 +2,11 @@
 
 Welcome to the Expense Item Frontend App, a web application designed to help you manage your expenses. With this app, you can browse your expense items, add new ones, and manage them locally with ease.
 
+## Video
+
+https://github.com/NadavBitran/ExpenseApp-Frontend/assets/122038636/bd168935-fd86-45a0-a499-a2208e3c611e
+
+
 ## Features 🌟
 
 - Browse expense items 💼
